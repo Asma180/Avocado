@@ -67,32 +67,76 @@ function mainSlider() {
 mainSlider();
 
 //review active
-$('.review-active').slick({
-	centerMode: true,
-	centerPadding: '60px',
-	slidesToShow: 3,
-	responsive: [
-	  {
-		breakpoint: 768,
-		settings: {
-		  arrows: false,
-		  centerMode: true,
-		  centerPadding: '40px',
-		  slidesToShow: 3
-		}
-	  },
-	  {
-		breakpoint: 480,
-		settings: {
-		  arrows: false,
-		  centerMode: true,
-		  centerPadding: '40px',
-		  slidesToShow: 1
-		}
-	  }
-	]
-  });
+  $('.review-active').owlCarousel({
+    center: true,
+    items:2,
+    loop:true,
+    margin:10,
+    responsive:{
+        600:{
+            items:4
+        }
+    }
+});
+$('.nonloop').owlCarousel({
+    center: true,
+    items:2,
+    loop:false,
+    margin:10,
+    responsive:{
+        600:{
+            items:4
+        }
+    }
+});
 
+
+//deal active
+  $('.deal-active').owlCarousel({
+    items:1,
+	loop:true,
+	dots:true,
+	arrows:true,
+    responsive:{
+        600:{
+            items:1
+        }
+    }
+});
+$('.nonloop').owlCarousel({
+    center: true,
+    items:2,
+    loop:false,
+    margin:10,
+    responsive:{
+        600:{
+            items:1
+        }
+    }
+});
+
+var grid = $('.grid').isotope({
+	itemSelector: '.grid-item',
+	percentPosition: true,
+	masonry: {
+		// use outer width of grid-sizer for columnWidth
+		columnWidth: '',
+	}
+});
+
+$('.portfolio-menu').on('click', 'button', function () {
+	var filterValue = $(this).attr('data-filter');
+	grid.isotope({ 
+		filter: filterValue,
+	});
+});
+
+//for menu active class
+$('.portfolio-menu button').on('click', function (event) {
+	$(this).siblings('.active').removeClass('active');
+	$(this).addClass('active');
+	event.preventDefault();
+});
 
 /* magnificPopup img view */
 $('.popup-image').magnificPopup({

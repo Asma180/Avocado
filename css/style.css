@@ -411,6 +411,88 @@ label {
 	color: #676767;
 }
 
+/*deal-area start*/
+.deal-area{
+	background: #e8ecef;
+	height: 500px;
+}
+.deal-image-area{
+	background: #fff;
+	height: 600px;
+	box-shadow: 1px 2px 16px #ddd;
+	margin-top: -50px;
+}
+.title h2{
+	font-size: 40px;
+	font-weight: 300;
+	text-transform: capitalize;
+	padding-top: 80px;
+	padding-bottom: 25px;
+}
+.deal-image{
+	height: 360px;
+	width: 360px;
+	background: #e8ecef;
+	margin-left: 90px;
+	position: relative;
+}
+.deal-image:after{
+	position: absolute;
+	content: "SALE";
+	height: 50px;
+	width: 100px;
+	background: #e23709;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 16px;
+	left: 0;
+	top: 70px;
+	cursor: pointer;
+}
+.item{
+    color: #fff;
+	font-size: 13px;
+    height: 70px;
+    width: 70px;
+    background: #a4bbc6;
+    text-align: center;
+    margin: 1px;
+	line-height: 30px;
+	padding: 10px;
+}
+.time-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.item span{
+	display: block;
+	margin-top: -5px;
+	text-transform: uppercase;
+}
+.deal-details{
+	margin-top: 80px;
+}
+.deal-content p{
+	font-size: 18px;
+	margin: 20px 0;
+	font-weight: 300;
+	text-transform: capitalize;
+	color: #000;
+}
+.deal-content p span{
+	font-weight: 500;
+}
+.deal-content p span span{
+	font-weight: 500;
+	color: #e23709;
+}
+.rating a{
+	color: #e23709
+}
+
 
 /*vegetables category area*/
 .category-img{
@@ -553,6 +635,46 @@ label {
 	color: #000
 }
 
+/*portfolio area start*/
+.portfolio-menu button{
+	border: none;
+	background: #fff;
+	font-size: 18px;
+	color: #000;
+	text-transform: uppercase;
+	margin: 0 20px;
+	cursor: pointer
+}
+.portfolio-img{
+	height: 165px;
+	width: 165px;
+	background: #e8ecef;
+	margin-bottom: 15px;
+}
+.portfolio-img-full{
+	height: 225px;
+	width: 555px;
+	background: #e8ecef;
+	margin-bottom: 15px;
+}
+.portfolio-text h4{
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+.portfolio-text p{
+	font-size: 13px;
+	font-weight: 300;
+	text-transform: capitalize;
+	color: #000;
+	margin-top: -12px;
+}
+.portfolio-menu button:hover, .portfolio-menu button.active{
+	border-bottom: 3px solid #e23709;
+	color: #e23709
+}
+
 /*blog area start*/
 .single-blog{
 	display: inline-block;
@@ -607,18 +729,16 @@ label {
 }
 .review-box{
 	background: #fff;
-	margin: 15px 5px;
-	margin-right: 0;
-	width: 360px;
+	margin: 15px 0px;
+	width: 330px;
 	padding: 20px;
-	box-shadow: 1px 2px 16px #333
+	box-shadow: 1px 2px 16px #ddd;
 }
 .review-img{
 	height: 112px;
 	width: 112px;
-	padding-top: 55px;
-	margin-left: 60px;
-	border-radius: 50%;
+	padding-top: 40px;
+	margin-left: 80px;
 }
 .review-img img{
 	border-radius: 50%;
@@ -643,7 +763,7 @@ label {
 	height: 47px;
 	border: none;
 	border-radius: 40px;
-	padding-left: 10px;
+	padding-left: 20px;
 }
 .form .btn{
 	padding: 6px 40px;
