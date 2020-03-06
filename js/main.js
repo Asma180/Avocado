@@ -69,50 +69,131 @@ mainSlider();
 //review active
   $('.review-active').owlCarousel({
     center: true,
-    items:2,
+    items:4,
     loop:true,
-    margin:10,
+    margin:0,
     responsive:{
-        600:{
-            items:4
-        }
     }
 });
 $('.nonloop').owlCarousel({
     center: true,
     items:2,
     loop:false,
-    margin:10,
+    margin:0,
     responsive:{
         600:{
-            items:4
+            items:2,
         }
     }
 });
 
 
 //deal active
-  $('.deal-active').owlCarousel({
-    items:1,
-	loop:true,
-	dots:true,
-	arrows:true,
-    responsive:{
-        600:{
-            items:1
-        }
-    }
-});
-$('.nonloop').owlCarousel({
-    center: true,
-    items:2,
-    loop:false,
-    margin:10,
-    responsive:{
-        600:{
-            items:1
-        }
-    }
+//$('.deal-active').slick({
+	//dots: false,
+	//arrows: true,
+	//infinite: true,
+	//speed: 300,
+	//slidesToShow: 1,
+	//slidesToScroll: 1,
+	//responsive: [
+		//{
+			//breakpoint: 1024,
+			//settings: {
+				//slidesToShow: 1,
+				//slidesToScroll: 1,
+				//infinite: true,
+				//dots: false,
+			//}
+		//},
+		//{
+			//breakpoint: 991,
+			//settings: {
+				//slidesToShow: 1,
+				//slidesToScroll: 1
+			//}
+		//},
+		//{
+			//breakpoint: 480,
+			//settings: {
+				//slidesToShow: 1,
+				//slidesToScroll: 1
+			//}
+		//}
+	//]
+//});
+
+$('.deal-active').slick({
+	dots: false,
+	arrows: true,
+	infinite: true,
+	prevArrow: '.arrow-prev',
+	nextArrow: '.arrow-next',
+	speed: 300,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	responsive: [
+	  {
+		breakpoint: 1024,
+		settings: {
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  infinite: true,
+		  dots: false
+		}
+	  },
+	  {
+		breakpoint: 991,
+		settings: {
+		  slidesToShow: 1,
+		  slidesToScroll: 1
+		}
+	  },
+	  {
+		breakpoint: 767,
+		settings: {
+		  slidesToShow: 1,
+		  slidesToScroll: 1
+		}
+	  }
+
+	]
+  });
+
+
+//blog active
+$('.blog-active').slick({
+	dots: false,
+	arrows: false,
+	infinite: false,
+	speed: 300,
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				infinite: false,
+				dots: false,
+			}
+		},
+		{
+			breakpoint: 991,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		}
+	]
 });
 
 var grid = $('.grid').isotope({

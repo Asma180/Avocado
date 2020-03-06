@@ -7,21 +7,220 @@
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
-
+    .feature-img img{
+        width: 100%;
+    }
+    .category-img img{
+        width: 100%;
+    }
+    .portfolio-img img{
+        width: 100%;
+    }
+    .blog-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .blog-content h3{
+        font-size: 15px;
+    }
+    .blog-content span{
+        font-size: 12px;
+    }
+    .review-box{
+        width: 240px;
+        padding: 10px;
+    }
+    .review-img{
+        padding-top: 20px;
+        transform: translateX(60%);
+    }
+    .review-content{
+        margin-top: 50px;
+    }
+    .review-content a i{
+        margin-bottom: 35px;
+    }
+    .subscribe-content p{
+        font-size: 15px;
+    }
+    .subscribe-content{
+        padding-top: 37px;
+    }
+    .subscribe-social-icons a {
+        font-size: 15px;
+        padding-right: 20px;
+        padding-left: 0;
+    }
 }
 
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+    .left-area ul li{
+        padding-right: 30px;
+    }
+    .right-area ul li{
+        padding-left: 25px;
+    }
+    .social-icons a, .icons a{
+        margin-right: 10px;
+    }
+    .icons a{
+        margin-left: 10px;
+    }
+    .logo{
+        margin-left: -50px;
+    }
+    .main-menu ul li a{
+        padding: 30px 10px;
+    }
+    .feature-img img, .category-img img{
+        width: 100%;
+    }
+    .feature-content h3 {
+        font-size: 14px;
+    }
+    .feature-content p {
+        font-size: 13px;
+    }
+    .category-content h3{
+       font-size: 18px;
+    }
+    .blog-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .blog-content h3{
+        font-size: 16px;
+    }
+    .blog-content span{
+        font-size: 15px;
+    }
+    .product-area{
+        height: 500px;
+    }
+    .product-img img{
+        height: 200px;
+        width: 200px;
+    }
+    .product-img::after{
+        height: 40px;
+        width: 40px;
+        font-size: 18px;
+        top: 63%;
+        left: 44%;
+        line-height: 40px;
+    }
+    .product-img:nth-child(1){
+        left: 30%;
+        top: -20px;
+    }
+    .product-img:nth-child(2){
+        left: 50%;
+        top: 60px;
+    }
+    .product-img:nth-child(3){
+        left: 70%;
+        top: 100px;
+    }
+    .product-img:nth-child(4){
+        left: 20%;
+        top: 180px;
+    }
+    .product-img:nth-child(5){
+        left: 0;
+        top: 300px;
+    }
+    .product-img:nth-child(6){
+        left: 60%;
+        top: 300px;
+    }
+    .product-img-hover{
+        background: #fff;
+        height: 300px;
+        width: 200px;
+        position: absolute;
+        bottom: 50px;
+        left: -35%;
+        transform: translateX(40%);
+    }
+    .product-img-hover h5{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .product-img-hover span{
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .image img{
+        padding-top: 20px;
+        padding-left: 20px;
+        margin-left: 35px;
+        margin-top: 20px;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+    }
+    .product-img-hover .btn {
+        font-size: 12px;
+        line-height: 25px;
+        padding: 10px 30px;
+        margin: 0;
+        margin-top: 20px;
+    }
 
-
+    .portfolio-img img{
+        width: 100%;
+    }
+    .portfolio-menu button{
+        font-size: 18px;
+        margin: 0 10px;
+    }
+    .subscribe-content p{
+        font-size: 13px;
+    }
+    .subscribe-content{
+        padding-top: 37px;
+    }
+    .subscribe-social-icons a {
+        font-size: 13px;
+        padding-right: 20px;
+        padding-left: 0;
+    }
+    .footer-area{
+        padding-left: 0;
+    }
+    .logo {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .footer-menu h3{
+        font-size: 15px;
+    }
+    .footer-menu ul{
+        margin-top: 20px;
+    }
+    .footer-menu ul li a{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .brand-area ul li a{
+        color: #676767;
+        font-size: 25px;
+        line-height: 40px;
+        margin-right: 5px;
+    }
+    .footer-bottom-area{
+        padding-top: 0;
+    }
 }
 
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
-
+    .deal-image img{
+        width: 100%;
+    }
  
 }
  

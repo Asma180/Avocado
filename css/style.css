@@ -349,6 +349,8 @@ label {
 	background: #000;
 	padding: 30px;
 }
+
+/*slider area start*/
 .slider-area{
 	height: 845px;
 	width: 100%;
@@ -393,9 +395,6 @@ label {
 	margin-top: 20px;
 }
 .feature-img{
-	height: 167px;
-	width: 261px;
-	background: #e8ecef;
 	margin-bottom: 35px;
 	margin-top: 65px;
 }
@@ -413,11 +412,11 @@ label {
 
 /*deal-area start*/
 .deal-area{
-	background: #e8ecef;
+	background: #f8fafb;
 	height: 500px;
 }
 .deal-image-area{
-	background: #fff;
+	background: #000;
 	height: 600px;
 	box-shadow: 1px 2px 16px #ddd;
 	margin-top: -50px;
@@ -430,10 +429,8 @@ label {
 	padding-bottom: 25px;
 }
 .deal-image{
-	height: 360px;
-	width: 360px;
-	background: #e8ecef;
 	margin-left: 90px;
+	margin-right: 90px;
 	position: relative;
 }
 .deal-image:after{
@@ -492,13 +489,39 @@ label {
 .rating a{
 	color: #e23709
 }
-
-
+button.slick-prev.slick-arrow, button.slick-next.slick-arrow{
+    text-indent: 10000px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 0;
+	background: #e8ecef;
+	box-shadow: 1px 1px 16px #a7a5a5;
+	margin-left: 100px;
+	position: relative;
+}
+button.slick-next.slick-arrow{
+	float: right;
+	margin-top: -325px;
+	margin-right: 50px;
+}
+button.slick-prev.slick-arrow{
+	float: left;
+	margin-top: 225px;
+	margin-left: 50px;
+}
+button.slick-next.slick-arrow:after{
+	position: absolute;
+	content: "\f105";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
 /*vegetables category area*/
 .category-img{
-	height: 262px;
-	width: 262px;
-	background: #e8ecef;
 	margin-bottom: 25px;
 }
 .category-content h3{
@@ -521,9 +544,6 @@ label {
 	color: #e23709;
 	font-weight: 600;
 }
-.product-choose-area .section-title p{
-	color: #000
-}
 
 /*product choose area start*/
 .btn {
@@ -540,18 +560,22 @@ label {
 .btn:hover{
 	color: #000
 }
+.product-choose-area .section-title p{
+	color: #000
+}
+.product-choose-area .section-title{
+	margin-bottom: 50px;
+}
 .product-area{
 	background: #e8ecef;
 	width: 100%;
 	height: 670px;
 }
 .product-img{
-	height: 153px;
-	width: 153px;
-	border-radius: 50%;
-	background: #fff;
-	position: relative;
 	position: absolute;
+}
+.product-img img{
+	position: relative;
 }
 .product-img::after{
 	height: 60px;
@@ -564,8 +588,8 @@ label {
 	font-weight: 700;
 	color: #fff;
 	text-align: center;
-	top: 80%;
-	left: 30%;
+	top: 65%;
+	left: 44%;
 	font-size: 25px;
 	line-height: 60px;
 	cursor: pointer;
@@ -575,38 +599,39 @@ label {
 }
 .product-img:nth-child(1){
 	left: 35%;
-	top: 60px;
+	top: 0;
 }
 .product-img:nth-child(2){
 	left: 50%;
-	top: 150px;
+	top: 90px;
 }
 .product-img:nth-child(3){
-	left: 70%;
-	top: 250px;
+	left: 65%;
+	top: 170px;
 }
 .product-img:nth-child(4){
 	left: 25%;
-	top: 300px;
+	top: 200px;
 }
 .product-img:nth-child(5){
 	left: 10%;
-	top: 450px;
+	top: 390px;
 }
 .product-img:nth-child(6){
-	left: 58%;
-	top: 450px;
+	left: 50%;
+	top: 390px;
 }
 .product-img-hover{
 	background: #fff;
 	height: 430px;
 	width: 260px;
 	position: absolute;
-	bottom: 0;
-	left: -100%;
+	bottom: 75px;
+	left: -25%;
 	transform: translateX(40%);
 	visibility: hidden;
 	opacity: 0;
+	box-shadow: 1px 2px 16px #ddd;
 }
 .product-img-hover h5{
 	font-size: 20px;
@@ -646,15 +671,6 @@ label {
 	cursor: pointer
 }
 .portfolio-img{
-	height: 165px;
-	width: 165px;
-	background: #e8ecef;
-	margin-bottom: 15px;
-}
-.portfolio-img-full{
-	height: 225px;
-	width: 555px;
-	background: #e8ecef;
 	margin-bottom: 15px;
 }
 .portfolio-text h4{
@@ -680,8 +696,17 @@ label {
 	display: inline-block;
 }
 .single-blog img{
-	height: 278px;
+	height: 260px;
 	width: 390px;
+}
+.blog-content{
+	text-align: center;
+	margin-top: 30px;
+}
+.blog-content h3{
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
 }
 /*subscribe-area*/
 .background{
@@ -702,8 +727,8 @@ label {
 	color: #636363;
 	font-size: 20px;
 	background: none;
-	padding-right: 0;
-	padding-left: 30px;
+	padding-right: 30px;
+	padding-left: 0;
 }
 
 /*review area*/
@@ -730,15 +755,16 @@ label {
 .review-box{
 	background: #fff;
 	margin: 15px 0px;
-	width: 330px;
-	padding: 20px;
+	width: 320px;
+	padding: 35px;
 	box-shadow: 1px 2px 16px #ddd;
 }
 .review-img{
 	height: 112px;
 	width: 112px;
 	padding-top: 40px;
-	margin-left: 80px;
+	margin-left: 0;
+	transform: translateX(60%);
 }
 .review-img img{
 	border-radius: 50%;
@@ -778,6 +804,7 @@ footer{
 }
 .footer-area{
 	padding: 70px 0;
+	padding-left: 100px;
 }
 .footer-menu h3{
 	font-size: 18px;
