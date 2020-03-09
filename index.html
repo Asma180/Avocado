@@ -110,13 +110,84 @@
                         <div class="col-xl-12 col-md-12">
                             <div class="main-menu text-center">
                                 <ul>
-                                    <li><a href="#">vegetables <i class="fa fa-angle-down"></i></a></li>
-                                    <li><a href="#">fruits <i class="fa fa-angle-down"></i></a></li>
-                                    <li><a href="#">spices <i class="fa fa-angle-down"></i></a></li>
+                                    <li><a href="#">vegetables <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <h2>vegetables category</h2>
+                                        <li>Tomatoes</li>
+                                        <li>Cucumbers</li>
+                                        <li>Eggplant</li>
+                                        <li>Carrot</li>
+                                        <li>Zucchini</li>
+                                        <li>Beet</li>
+                                        <li>Savoy Cabbage</li>
+                                        <li><a href="#">See other <i class="fa fa-angle-down"></i></a></li>
+                                    </ul>
+                                    </li>
+                                    <li><a href="#">fruits <i class="fa fa-angle-down"></i></a>
+                                        <ul class="submenu">
+                                            <h2>fruites category</h2>
+                                            <li>Apples</li>
+                                            <li>Oranges</li>
+                                            <li>Bananas</li>
+                                            <li>Plums</li>
+                                            <li>Cherry</li>
+                                            <li>Beet</li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">spices <i class="fa fa-angle-down"></i></a>
+                                        <ul class="submenu">
+                                            <h2>spice</h2>
+                                            <li>Pepper</li>
+                                            <li>Basil</li>
+                                            <li>Oregano</li>
+                                            <li>Thyme</li>
+                                            <li>Caraway</li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#">herbs</a></li>
                                     <li><a href="#">dried fruits</a></li>
                                     <li><a href="#">bakery products</a></li>
-                                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                    
+                                    <li><a href="#"><i class="fa fa-search"></i></a>
+                                        <div class="search-form">
+                                            <form action="#">
+                                                <input type="text" placeholder="search">
+                                                <button><i class="fa fa-search"></i></button>
+                                            </form>
+                                        </div>
+                                        <div class="search-bar text-left">
+                                            <h4>Showing results for <span>tomato</span></h4>
+                                            <h5><span>Product</span></h5>
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><img src="img/search.jpg" alt=""></td>
+                                                        <td>
+                                                            <h5>organic tomato</h5>
+                                                            <button>in porduct category</button>
+                                                        </td>
+                                                        <td><span>$3.99</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="img/search.jpg" alt=""></td>
+                                                        <td>
+                                                            <h5>cherry tomato</h5>
+                                                            <button>in porduct category</button>
+                                                        </td>
+                                                        <td><span>$7.99</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="img/search.jpg" alt=""></td>
+                                                        <td>
+                                                            <h5>orange tomato</h5>
+                                                            <button>in porduct category</button>
+                                                        </td>
+                                                        <td><span>$4.99</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -282,12 +353,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="arrow-prev team-arrow">
-                    <span><i class="fas fa-angle-left"></i></span>
-                </div>
-                <div class="arrow-next team-arrow">
-                    <span><i class="fas fa-angle-right"></i></span>
-                </div>
+            </div>
+            <div class="arrow-prev deal-arrow">
+                <a><i class="fas fa-angle-left"></i></a>
+            </div>
+            <div class="arrow-next deal-arrow">
+                <a><i class="fas fa-angle-right"></i></a>
             </div>
         </div>
         <!--deal area end-->
@@ -481,14 +552,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="row grid">
+                <div class="row grid aria-selected="false"">
                     <div class="col-xl-2 col-md-2 col-sm-2 grid-item cat1">
                         <div class="portfolio-img">
                             <img src="img/port.jpg" alt="">
                         </div>
                         <div class="portfolio-text text-center">
                             <h4>apricot</h4>
-                            <p><span><span>$5.99 </span>$7.99 /</span> pound</p>
+                            <p> <span>$5.99 <span>$7.99</span> </span> / pound</p>
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-2 col-sm-2 grid-item cat1">
@@ -938,7 +1009,7 @@
         <!--subscribe-form start-->
         <div class="subscribe-form mt-150">
             <div class="container">
-                <div class="col-xl-12 col-md-12">
+                <div class="col-xl-10 offset-xl-1 col-md-10 offset-md-1">
                     <div class="form-area text-center">
                         <div class="heading">
                             <h1>subscribe</h1>

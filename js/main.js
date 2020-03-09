@@ -7,6 +7,8 @@ $('#mobile-menu').meanmenu({
 	meanScreenWidth: "992"
 });
 
+
+
 // One Page Nav
 var top_offset = $('.header-area').height() - 10;
 $('.main-menu nav ul').onePageNav({
@@ -89,40 +91,6 @@ $('.nonloop').owlCarousel({
 
 
 //deal active
-//$('.deal-active').slick({
-	//dots: false,
-	//arrows: true,
-	//infinite: true,
-	//speed: 300,
-	//slidesToShow: 1,
-	//slidesToScroll: 1,
-	//responsive: [
-		//{
-			//breakpoint: 1024,
-			//settings: {
-				//slidesToShow: 1,
-				//slidesToScroll: 1,
-				//infinite: true,
-				//dots: false,
-			//}
-		//},
-		//{
-			//breakpoint: 991,
-			//settings: {
-				//slidesToShow: 1,
-				//slidesToScroll: 1
-			//}
-		//},
-		//{
-			//breakpoint: 480,
-			//settings: {
-				//slidesToShow: 1,
-				//slidesToScroll: 1
-			//}
-		//}
-	//]
-//});
-
 $('.deal-active').slick({
 	dots: false,
 	arrows: true,
@@ -133,10 +101,46 @@ $('.deal-active').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: false,
+			}
+		},
+		{
+			breakpoint: 991,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+	]
+});
+
+  $('.team-active').slick({
+	dots: false,
+	arrows: true,
+	infinite: true,
+	prevArrow: '.arrow-prev',
+	nextArrow: '.arrow-next',
+	speed: 300,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	responsive: [
 	  {
 		breakpoint: 1024,
 		settings: {
-		  slidesToShow: 1,
+		  slidesToShow: 3,
 		  slidesToScroll: 1,
 		  infinite: true,
 		  dots: false
@@ -145,7 +149,7 @@ $('.deal-active').slick({
 	  {
 		breakpoint: 991,
 		settings: {
-		  slidesToShow: 1,
+		  slidesToShow: 2,
 		  slidesToScroll: 1
 		}
 	  },
@@ -196,9 +200,10 @@ $('.blog-active').slick({
 	]
 });
 
+//portfolio grid
 var grid = $('.grid').isotope({
 	itemSelector: '.grid-item',
-	percentPosition: true,
+	percentPosition: false,
 	masonry: {
 		// use outer width of grid-sizer for columnWidth
 		columnWidth: '',
